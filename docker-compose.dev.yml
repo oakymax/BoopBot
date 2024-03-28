@@ -4,7 +4,6 @@ services:
     restart: 'unless-stopped'
     build:
       context: ./docker/
-      dockerfile: dev.Dockerfile
     links:
       - db:db
     working_dir: /var/www
@@ -34,7 +33,6 @@ services:
     restart: 'unless-stopped'
     build:
       context: ./docker/
-      dockerfile: dev.Dockerfile
     links:
       - db:db
     working_dir: /var/www
