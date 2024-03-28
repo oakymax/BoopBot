@@ -1,5 +1,10 @@
 <?php
 
+use App\Models\Bot\Commands\Hello;
+use App\Models\Bot\Commands\Help;
+use App\Models\Bot\Commands\Start;
+use App\Models\Bot\Flows\UnprocessedMessageResponse;
+
 return [
     'token' => env('BOT_TOKEN'),
 
@@ -14,11 +19,13 @@ return [
     ],
 
     'commands' => [
-        \App\Models\Bot\Commands\Hello::class,
+        Hello::class,
+        Help::class,
+        Start::class,
     ],
 
     'flows' => [
-
+        UnprocessedMessageResponse::class,
     ],
 
     'unknownCommandAction' => null,

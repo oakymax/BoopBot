@@ -21,10 +21,11 @@ class SetFunnyReactionToJustReceivedMessage extends CommonBotFlow
         if ($message = $update->message()) {
             $telegraph = $this->botService->telegraph();
 
+            $telegraph->chatAction(ChatActions::CHOOSE_STICKER)->send();
             $telegraph->setMessageReaction(
                 $message->id(),
                 Arr::random($telegraph->getFunnyReactions())
-            )->send();
+            )->dispatch()->delay(1);
         }
     }
 }

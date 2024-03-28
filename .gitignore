@@ -18,3 +18,5 @@ yarn-error.log
 /.idea
 /.vscode
 docker-compose.yml
+.docker.env
+docker/Dockerfile

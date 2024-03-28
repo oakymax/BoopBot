@@ -1,11 +1,11 @@
 {
-    "name": "oakymax/boopbot",
+    "name": "oakymax/boop-bot",
     "type": "project",
     "description": "Boob Bot source code.",
     "keywords": ["laravel", "bot", "telegram"],
     "license": "MIT",
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "defstudio/telegraph": "^1.42",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",

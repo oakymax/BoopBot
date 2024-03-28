@@ -15,7 +15,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     environment:
-      PHP_IDE_CONFIG: "serverName=boopbot.app"
+      PHP_IDE_CONFIG: "serverName=BoopBot.app"
   db:
     env_file: .docker.env
     image: postgres:14
